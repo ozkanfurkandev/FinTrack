@@ -1,0 +1,10 @@
+# Netlify deploy ayarları - SPA (Single Page Application) için
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: Tüm route'lar index.html'e yönlendirilir
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

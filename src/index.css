@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/*
+ * Dark mode: "dark" sınıfına göre çalışsın (butonla açık/koyu geçişi için).
+ * Varsayılan prefers-color-scheme yerine .dark selector kullanıyoruz.
+ */
+@custom-variant dark (.dark &);
+
+/* Fintrack - Global stiller */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+}
